@@ -1,0 +1,86 @@
+@charset "EUC-KR";
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+form {
+    background-color: #fefefe;
+    margin: 10% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 400px; /* Could be more or less, depending on screen size */
+    padding: 16px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: none;
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 2px;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 5px; /* 수정된 부분: 좌우 마진을 5px로 조정 */
+    border: none;
+    cursor: pointer;
+    width: calc(50% - 5px); /* 수정된 부분: 버튼 너비를 50%로 설정하고 좌우 마진을 고려하여 계산 */
+    opacity: 0.9;
+    border-radius: 2px;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* 취소 버튼 */
+.cancelbtn {
+    background-color: #f44336;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.clearfix {
+    margin-top: 10px;
+}
+
+.clearfix button {
+    width: 100%;
+}
+
+
